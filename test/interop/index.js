@@ -35,9 +35,9 @@ function createTestSuite( file ) {
         var wire = new Buffer( req.wire, 'hex' )
         
         // Encoder
-        assert.equal( hpack.encode( req.headers ), wire )
+        assert.deepEqual( hpack.encode( req.headers ), wire )
         // Decoder
-        assert.equal( hpack.decode( wire ), req.headers )
+        assert.deepEqual( hpack.decode( wire ), req.headers )
         
       })
     })
