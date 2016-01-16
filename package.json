@@ -24,7 +24,8 @@
     "mocha": "~2.3.4"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --sort --ui tdd",
+    "test-data": "rm -rf test/data/* && node scripts/generate-test-data.js",
     "benchmark": "matcha"
   },
   "homepage": "https://github.com/jhermsmeier/node-quic-hpack",
