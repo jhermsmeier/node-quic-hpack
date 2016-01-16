@@ -1,2 +1,4 @@
 .*
+*.log
 hpack-test-case
+test/interop/data
