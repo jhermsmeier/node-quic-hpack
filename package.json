@@ -1,0 +1,41 @@
+{
+  "name": "quic-hpack",
+  "version": "0.0.0",
+  "description": "HPACK Header Compression",
+  "license": "MIT",
+  "keywords": [
+    "hpack",
+    "rfc7541",
+    "quic",
+    "http",
+    "http2"
+  ],
+  "main": "lib/hpack",
+  "author": {
+    "name": "Jonas Hermsmeier",
+    "email": "jhermsmeier@gmail.com",
+    "url": "https://jhermsmeier.de/"
+  },
+  "dependencies": {
+    "double-ended-queue": "~2.1.0-0"
+  },
+  "devDependencies": {
+    "matcha": "~0.6.1",
+    "mocha": "~2.3.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "benchmark": "matcha"
+  },
+  "homepage": "https://github.com/jhermsmeier/node-quic-hpack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhermsmeier/node-quic-hpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/node-quic-hpack/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
