@@ -2,7 +2,7 @@ var fs = require( 'fs' )
 var path = require( 'path' )
 
 const SOURCE_DIR = path.join( __dirname, '..', 'hpack-test-case' )
-const TEST_DATA_DIR = path.join( __dirname, '..', 'test/data' )
+const TEST_DATA_DIR = path.join( __dirname, '..', 'test/interop/data' )
 
 function getDataDirs() {
   return fs.readdirSync( SOURCE_DIR )
