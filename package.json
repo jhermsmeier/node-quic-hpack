@@ -26,8 +26,9 @@
   "scripts": {
     "test": "mocha --sort --ui tdd",
     "test-interop": "mocha --sort --ui tdd test/interop",
-    "test-data": "rm -rf test/data/* && node scripts/generate-test-data.js",
+    "clean-test-data": "rm -rf test/interop/data/",
     "fetch-test-data": "git clone --depth 1 https://github.com/http2jp/hpack-test-case.git",
+    "generate-test-data": "node scripts/generate-test-data.js",
     "benchmark": "matcha"
   },
   "homepage": "https://github.com/jhermsmeier/node-quic-hpack",
