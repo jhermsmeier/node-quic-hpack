@@ -6,4 +6,9 @@ branches:
   only:
     - master
 sudo: false
-script: npm test
+before_script:
+  - npm run fetch-test-data
+  - npm run generate-test-data
+script:
+  - npm run test
+  - npm run test-interop
