@@ -20,8 +20,8 @@
     "double-ended-queue": "~2.1.0-0"
   },
   "devDependencies": {
-    "matcha": "~0.6.1",
-    "mocha": "~2.3.4"
+    "matcha": "~0.7.0",
+    "mocha": "~3.0.2"
   },
   "scripts": {
     "test": "mocha --sort --ui tdd",
