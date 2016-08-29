@@ -1,11 +1,10 @@
 language: node_js
+sudo: false
 node_js:
   - stable
-  - "4"
 branches:
   only:
     - master
-sudo: false
 before_script:
   - npm run fetch-test-data
   - npm run generate-test-data
