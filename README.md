@@ -1,12 +1,12 @@
 # HPACK Header Compression
-[![npm](http://img.shields.io/npm/v/quic-hpack.svg?style=flat-square)](https://npmjs.com/quic-hpack)
-[![npm downloads](http://img.shields.io/npm/dm/quic-hpack.svg?style=flat-square)](https://npmjs.com/quic-hpack)
-[![build status](http://img.shields.io/travis/jhermsmeier/node-quic-hpack.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-quic-hpack)
+[![npm](https://img.shields.io/npm/v/quic-hpack.svg?style=flat-square)](https://npmjs.com/package/quic-hpack)
+[![npm downloads](https://img.shields.io/npm/dm/quic-hpack.svg?style=flat-square)](https://npmjs.com/package/quic-hpack)
+[![build status](https://img.shields.io/travis/jhermsmeier/node-quic-hpack.svg?style=flat-square)](https://travis-ci.org/jhermsmeier/node-quic-hpack)
 
 ## Install via [npm](https://npmjs.com)
 
 ```sh
-npm install quic-hpack
+npm install --save quic-hpack
 ```
 
 ## Terminology
