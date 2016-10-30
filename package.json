@@ -25,10 +25,10 @@
   },
   "scripts": {
     "test": "mocha --sort --ui tdd",
-    "test-interop": "mocha --sort --ui tdd test/interop",
-    "clean-test-data": "rm -rf test/interop/data/",
-    "fetch-test-data": "git clone --depth 1 https://github.com/http2jp/hpack-test-case.git",
-    "generate-test-data": "node scripts/generate-test-data.js",
+    "test:interop": "mocha --sort --ui tdd test/interop",
+    "test:clean": "rm -rf test/interop/data/ && rm -rf hpack-test-case",
+    "test:fetch": "git clone --depth 1 https://github.com/http2jp/hpack-test-case.git",
+    "test:generate": "node scripts/generate-test-data.js",
     "benchmark": "matcha"
   },
   "homepage": "https://github.com/jhermsmeier/node-quic-hpack",

@@ -8,8 +8,8 @@ branches:
   only:
     - master
 before_script:
-  - npm run fetch-test-data
-  - npm run generate-test-data
+  - npm run test:fetch
+  - npm run test:generate
 script:
   - npm run test
-  - npm run test-interop
+  - npm run test:interop
