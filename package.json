@@ -28,6 +28,7 @@
     "test:interop": "mocha --sort --ui tdd test/interop",
     "test:clean": "rm -rf test/interop/data/ && rm -rf hpack-test-case",
     "test:fetch": "git clone --depth 1 https://github.com/http2jp/hpack-test-case.git",
+    "test:update": "cd hpack-test-case && git pull origin master && cd ..",
     "test:generate": "node scripts/generate-test-data.js",
     "benchmark": "matcha"
   },
