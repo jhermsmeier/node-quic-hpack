@@ -1,5 +1,10 @@
 .*
+*.md
+*.log
+doc
+docs
 test
+example
 benchmark
 hpack-test-case
 scripts
