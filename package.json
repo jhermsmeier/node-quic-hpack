@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "matcha": "~0.7.0",
-    "mocha": "~3.0.2"
+    "mocha": "~3.1.2"
   },
   "scripts": {
     "test": "mocha --sort --ui tdd",
