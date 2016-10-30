@@ -4,6 +4,7 @@
 doc
 docs
 test
+scripts
 example
 benchmark
 hpack-test-case
