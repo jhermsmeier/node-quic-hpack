@@ -9,6 +9,12 @@
 npm install --save quic-hpack
 ```
 
+## Usage
+
+```js
+var HPACK = require( 'quic-hpack' )
+```
+
 ## Terminology
 
 - **Header Field:**
@@ -39,25 +45,15 @@ when decoded, yields a complete header list.
 - [RFC 7541: HPACK: Header Compression for HTTP/2](https://tools.ietf.org/html/rfc7541)
 - [HPACK Test Cases](https://github.com/http2jp/hpack-test-case/)
 
-## Usage
+## Testing
 
-```js
-var HPACK = require( 'quic-hpack' )
-```
+There are two sets of tests:
 
-## Tests
+1. The libs unit tests, run them with `npm test`
+2. Interoperability tests, which need to be prepared prior to running them the first time
+  - `npm run test:fetch` downloads the [hpack-test-case](https://github.com/http2jp/hpack-test-case) repository
+  - `npm run test:generate` generates test data in the `test/interop` directory
+  - `npm run test:update` updates the hpack-test-case repository
+  - `npm run test:interop` run the interop tests
 
-**Unit tests:**
-```sh
-npm test
-```
-
-**Interoperability tests against other implementations:**
-```sh
-# Pull HPACK test data
-npm run fetch-test-data
-# Generate interop data
-npm run generate-test-data
-# Run the interop tests
-npm run test-interop
-```
+For details about all available scripts, either run `npm run` or check the `package.json`
